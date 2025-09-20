@@ -1,0 +1,42 @@
+{
+  "name": "CubageHistory",
+  "type": "object",
+  "properties": {
+    "warehouse_id": {
+      "type": "string",
+      "description": "ID do armazém"
+    },
+    "user_email": {
+      "type": "string",
+      "description": "Email do usuário"
+    },
+    "length": {
+      "type": "number",
+      "description": "Comprimento em cm"
+    },
+    "width": {
+      "type": "number",
+      "description": "Largura em cm"
+    },
+    "height": {
+      "type": "number",
+      "description": "Altura em cm"
+    },
+    "volume_m3": {
+      "type": "number",
+      "description": "Volume calculado em m³"
+    },
+    "estimated_price": {
+      "type": "number",
+      "description": "Preço estimado"
+    }
+  },
+  "required": [
+    "warehouse_id",
+    "length",
+    "width",
+    "height",
+    "volume_m3",
+    "estimated_price"
+  ]
+}

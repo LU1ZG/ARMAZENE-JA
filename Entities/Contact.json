@@ -1,0 +1,38 @@
+{
+  "name": "Contact",
+  "type": "object",
+  "properties": {
+    "warehouse_id": {
+      "type": "string",
+      "description": "ID do armazém relacionado"
+    },
+    "name": {
+      "type": "string",
+      "description": "Nome do interessado"
+    },
+    "email": {
+      "type": "string",
+      "description": "Email do interessado"
+    },
+    "message": {
+      "type": "string",
+      "description": "Mensagem do interessado"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "read",
+        "responded"
+      ],
+      "default": "new",
+      "description": "Status da mensagem"
+    }
+  },
+  "required": [
+    "warehouse_id",
+    "name",
+    "email",
+    "message"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "name": "Warehouse",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Título do anúncio"
+    },
+    "description": {
+      "type": "string",
+      "description": "Descrição detalhada"
+    },
+    "price_per_m3": {
+      "type": "number",
+      "description": "Preço por metro cúbico"
+    },
+    "warehouse_type": {
+      "type": "string",
+      "enum": [
+        "refrigerado",
+        "seco",
+        "especial",
+        "geral"
+      ],
+      "description": "Tipo de armazém"
+    },
+    "country": {
+      "type": "string",
+      "default": "Brasil"
+    },
+    "state": {
+      "type": "string",
+      "description": "Estado"
+    },
+    "city": {
+      "type": "string",
+      "description": "Cidade"
+    },
+    "neighborhood": {
+      "type": "string",
+      "description": "Bairro"
+    },
+    "street": {
+      "type": "string",
+      "description": "Rua"
+    },
+    "zip_code": {
+      "type": "string",
+      "description": "CEP"
+    },
+    "company_cnpj": {
+      "type": "string",
+      "description": "CNPJ da empresa"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "URLs das imagens"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Se o anúncio está ativo"
+    }
+  },
+  "required": [
+    "title",
+    "price_per_m3",
+    "city",
+    "state"
+  ]
+}
